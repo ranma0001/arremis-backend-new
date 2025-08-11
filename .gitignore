@@ -1,0 +1,13 @@
+# deps / builds
+node_modules/
+.pnpm-store/
+.turbo/
+dist/
+build/
+coverage/
+
+# env / logs / misc
+.env
+*.log
+.DS_Store
+cklear
