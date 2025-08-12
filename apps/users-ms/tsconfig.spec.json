@@ -1,8 +1,0 @@
-{
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "types": ["jest", "node"],
-    "outDir": "../../dist/users-ms-spec"
-  },
-  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
-}
