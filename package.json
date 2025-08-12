@@ -1,24 +1,29 @@
 {
   "name": "arremis-backend-new",
-  "private": true,
   "version": "1.0.0",
-  "description": "Backend monorepo for ARREMIS services (NestJS + Prisma + Docker)",
-  "packageManager": "pnpm@10.14.0",
-  "workspaces": ["apps/*", "packages/*"],
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "turbo run dev --parallel",
-    "build": "turbo run build",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "docker:up": "docker compose up -d",
-    "docker:down": "docker compose down -v",
-    "prisma:generate": "pnpm -C packages/prisma generate",
-    "prisma:migrate": "pnpm -C packages/prisma migrate"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/platform-express": "^11.1.6",
+    "@types/node": "^24.2.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   },
   "devDependencies": {
-    "turbo": "^2.5.5",
-    "typescript": "^5.9.2",
-    "eslint": "^9.33.0",
-    "prettier": "^3.6.2"
+    "@nestjs/testing": "^11.1.6",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1"
   }
 }
